@@ -1,0 +1,1 @@
+curl -XPUT "localhost:9200/_river/my_jdbc_river/_meta" -d" { ""type"":""jdbc"",""jdbc"":{""url"":""jdbc:mysql://localhost:3306/cflrepository"",""user"":""root"",""password"":""root"",""sql"":""select * from attributedanomalies"",""index"":""cflrepository"",""type"":""attributedanomalies"",""autocommit"":""true"",""maxbulkactions"" : 1000, ""maxconcurrentbulkactions"" : 16}}"
